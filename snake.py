@@ -2,6 +2,24 @@
 
 #requires a colour package
 #box drawing package
+import pygame
+
+
+#GLOBAL VARIABLES
+#width/height of container
+WIDTH, HEIGHT = 900, 500
+
+#Container
+CONTAINER = pygame.Rect(WIDTH//2-5, 0, 10, HEIGHT)
+
+#colours
+WHITE = (255,255,255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+YELLOW = (255, 255, 0)
+
+FPS = 60
+
 
 
 #Create a 2D container to hold the game
@@ -45,10 +63,7 @@ class Snake:
     def draw_snake_head(self):
         pass
 
-    def head_xlocation(self):
-        pass
-
-    def head_ylocation(self):
+    def snake_movement(self):
         pass
 
     def eat_apple(self):
