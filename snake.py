@@ -57,6 +57,10 @@ class Snake:
     def draw_body_sqaures(self):
         pass
 
+    def snake_dies(self):
+        #if position of snake head is the same as another part of snake body or of boarder
+        #snake dies
+        pass
 
 
 #Creat an apple
@@ -64,6 +68,7 @@ class Snake:
     #apple is a rectangle possibly green
     #apple appears around the board at a random location 
     #apple appears around the board at a given time interval
+    #apple gets eaten
 
 class Apple:
 
@@ -73,6 +78,10 @@ class Apple:
     def draw_apple(self):
         pass
 
+#apple disappears from board
+    def is_eten(self):
+        #position of apple set to none?
+        pass
 
 
 
