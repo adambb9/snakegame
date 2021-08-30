@@ -63,7 +63,9 @@ class Snake:
     def draw_snake_head(self):
         pass
 
-    def snake_movement(self):
+    def snake_movement(self, keypressed):
+        #use keyboard strokes to guide direction of snake
+
         pass
 
     def eat_apple(self):
