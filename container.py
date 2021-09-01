@@ -1,19 +1,29 @@
 #The aim is to recreate the traditional snake game with some new features
+#box drawing package
 
 import pygame
 
-#box drawing package
+
 
 pygame.init()
 
+#global width and height variables
+WIDTH, HEIGHT = 1300, 700
 
-WIDTH, HEIGHT = 900, 500
-CONTAINER = pygame.display.set_mode((WIDTH, HEIGHT))
-COLOUR = (255,0,0)
+#draw a surface
+SURFACE = pygame.display.set_mode((WIDTH, HEIGHT))
 
+#global colour variables
+WHITE = (255,255,255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+YELLOW = (255, 255, 0)
+
+#dimensions and position of rectangle, later to be snake/apple body
+RECT = pygame.Rect(650, 350, 80, 80)
 
 # Drawing Rectangle
-pygame.draw.rect(CONTAINER, COLOUR, pygame.Rect(30, 30, 60, 60))
+pygame.draw.rect(SURFACE, YELLOW, RECT)
 pygame.display.flip()
 
 #Create a 2D container to hold the game

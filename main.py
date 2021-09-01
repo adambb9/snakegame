@@ -21,8 +21,36 @@ YELLOW = (255, 255, 0)
 
 FPS = 60
 
-while True:
+def draw_window(snake_points, apple, snake_head, snake_body=[]):
+    #container
+    #snake_score
+    #surface.blit(snake_points)
+    #apple
+    #surface.blit(apple)
+    #snake_head
+    #surface.blit(snake_head)
+    #snake_body
+    #surface.blit(snake_body)
+    #pygame.display.update()
     pass
+
+def snake_movement(keys_pressed, snake):
+    #if keys_pressed[pygame.K_LEFT]: # LEFT
+        #snake.x -= VEL
+    #if keys_pressed[pygame.K_RIGHT]: # RIGHT
+        #snake.x += VEL
+    #if keys_pressed[pygame.K_UP]: # UP
+        #snake.y -= VEL
+    #if keys_pressed[pygame.K_DOWN]: # DOWN
+        #snake.y += VEL
+    pass
+
+while True:
+    #draw container 
+    #draw apple
+    #draw snake
+    pass
+
 
 #Main game loop
 #game speed/time

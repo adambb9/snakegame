@@ -14,6 +14,7 @@
         #create a list keeping track of the last head locations and draw the body sqaures at those positions
     #snake has a starting point on the board
     #if snake bump head first into the wall or its own body the snake dies
+SNAKE_HEAD_WIDTH, SNAKE_HEAD_HEIGHT = 25, 20
 
 
 class Snake:
