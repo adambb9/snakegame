@@ -1,43 +1,8 @@
 #The aim is to recreate the traditional snake game with some new features
 
 #requires a colour package
-#box drawing package
-import pygame
 
 
-#GLOBAL VARIABLES
-#width/height of container
-WIDTH, HEIGHT = 900, 500
-
-#Container
-CONTAINER = pygame.Rect(WIDTH//2-5, 0, 10, HEIGHT)
-
-#colours
-WHITE = (255,255,255)
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-YELLOW = (255, 255, 0)
-
-FPS = 60
-
-
-
-#Create a 2D container to hold the game
-    #class 
-    #Container has a width and a height
-    #Container needs to be drawn
-    #Lines of container have a colour, a thickness
-    #Container will need to be redrawn every time the loop starts
-
-class Container:
-
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
-
-
-    def draw_container(self):
-        pass
 
 #Create a snake
     #class
@@ -80,27 +45,4 @@ class Snake:
         pass
 
 
-#Creat an apple
-    #class
-    #apple is a rectangle possibly green
-    #apple appears around the board at a random location 
-    #apple appears around the board at a given time interval
-    #apple gets eaten
 
-class Apple:
-
-    def __init__(self, x_position=0, y_position= 0, colour):
-        self.colour = colour
-
-    def draw_apple(self):
-        pass
-
-#apple disappears from board
-    def is_eten(self):
-        #position of apple set to none?
-        pass
-
-
-
-#Main game loop
-#game speed/time
